@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Cards Using HTML & CSS</title>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato&family=Yanone+Kaffeesatz:wght@700&display=swap&family=Anton&display=swap');
+    * {
+        font-family: 'Lato', sans-serif;
+    }
+
+    body {
+        margin: 0;
+        padding: 5%;
+        background: url(https://travellingmoods.com/wp-content/uploads/2015/07/rainforest.jpg) no-repeat center center/cover;
+        backdrop-filter: blur(5px);
+        background-attachment: fixed;
+    }
+
+    .main-heading {
+        font-family: 'Anton', sans-serif;
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        color: white;
+        text-shadow: 5px 5px black;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: strech;
+    }
+
+    .card {
+        width: 25%;
+        box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+        background-color: rgba(255, 255, 255, 0.9);
+        justify-content: center;
+        align-items: stretch;
+        height: 100vh;
+    }
+    .card {
+        width: 25%;
+        box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+        background-color: rgba(255, 255, 255, 0.9);
+        justify-content: center;
+        align-items: stretch;
+        height: 100vh;
+    }
+
+    .card-img img {
+        width: 100%;
+    }
+
+    .card-desc {
+        padding: 5%;
+    }
+
+    .card-desc h1 {
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        text-transform: uppercase;
+    }
+
+    footer {
+        padding: 5%;
+        text-align: center;
+    }
+
+    footer a {
+        background-color: white;
+        padding: 1%;
+        border-radius: 20px;
+       
+        color: black;
+        font-weight: bolder;
+        font-size: 1.5rem;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .card {
+            width: 45%;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .main-heading {
+            font-size: 2rem;
+        }
+        .card {
+            width: 100%;
+            margin: 2.5%;
+        }
+
+        footer a {
+            font-size: 1rem;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <h1 class="main-heading">Top 3 Wild Animals</h1>
+    <div class="cards">
+        <div class="card">
+            <div class="card-img">
+                <img src="https://earthnworld.com/wp-content/uploads/2018/11/African-Lion-1024x678.jpg" alt="">
+            </div>
+            <div class="card-desc">
+                <h1>African Lion</h1>
+                <p>Lions are viewed as the rulers of the wilderness, and in all respects which is all well and good. The African lion has staggering velocity, well sharpened sharp paws and teeth to assault a conceivable prey. They are the greatest of the African carnivores. The females, for the most part, do the chasing, and the guys are sluggish, caught up with securing the pride.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img">
+                <img src="https://earthnworld.com/wp-content/uploads/2018/01/CAPE-BUFFALO-1-1024x862.jpg" alt="">
+            </div>
+            <div class="card-desc">
+                <h1>Cape Buffalo</h1>
+                <p>Otherwise called the African bison, this is an especially forceful occupant of the African meadows. The Cape Buffalo is the main individual from the bison and steers clan that happens normally in Africa. Cape wild ox has been known to charge exploited people without incitement. With more than 2,000 pounds of weight and the capacity to charge at 40 miles 60 minutes, they are a standout amongst the most hazardous toughest animals to experience.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img">
+                <img src="https://earthnworld.com/wp-content/uploads/2017/09/Hyena.jpg" alt="Hyenas">
+            </div>
+            <div class="card-desc">
+                <h1>Hyenas</h1>
+                <p>The hyena is Africa’s most regular expansive meat eater. Weighing from 90 to 190 pounds, they are presumed to be weak and meek however can be striking and risky, assaulting creatures and people. Unique in relation to most different creatures, female spotted hyenas are predominant over the guys and exceed them by around 3 pounds. The spotted hyena is an apt seeker yet additionally a scrounger. Hyenas are pack creatures that reason various human fatalities consistently. They’re physically extensive and forceful and have a chomp that is developed for searching, so can without much of a stretch smash bone and tear substance.</p>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
